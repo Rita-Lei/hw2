@@ -3,12 +3,14 @@ var y = 100;
 function setup() { 
   createCanvas(400, 400);
 } 
+
 function draw() { 
-	ellipse(x,y,50,50);
-	if(x <=400){
+  background(220);
+	if(x<350){
 		x = x + 3;
+	ellipse(x,y,100,100);
 	}
-	else{
-		x = 100;
-	}
+		else{
+			x = 100;
+  }
 }
