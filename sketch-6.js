@@ -8,14 +8,15 @@ function setup() {
 
 function draw() {
   background(220);
-
   x = x + spd;
   ellipse(x, y, 50, 50);
 	
   if (x > width || x <= 0) {
   	spd = spd * -1;
-  }
-		if (mousePressd){
-	ellipse(mouseX,mouseY,50,50);
-  }
+  }	
+}
+	
+function mousePressed(){
+	x = mouseX;
+	y = mouseY;
 }
